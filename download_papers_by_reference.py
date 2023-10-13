@@ -80,7 +80,7 @@ def main(reference_ids=None, path_to_pdf="literature/pdfs/survey.pdf", output_pa
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Download and save papers from ArXiv using reference IDs and PDF path from a paper.")
-    parser.add_argument('--reference_ids', nargs='+', type=int, default=list(range(1, 10)),
+    parser.add_argument('--reference_ids', nargs='+', type=int, default=None,
                         help="List of reference IDs of the papers that have to be downloaded")
     parser.add_argument('--path_to_pdf', type=str, default="literature/rag/a_survey_on_retrieval-augmented_text_generation.pdf",
                         help="Path to the paper as PDF file")
